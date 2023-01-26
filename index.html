@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5fecc5a088.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <a href="/index.html"><img src="/bgnav.jpeg" id="navimg" alt=""></a>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/impacts.html">Impacts</a></li>
+            <li><a href="/Safety.html">Protection</a>
+                <div class="sub_menu">
+                    <ul>
+                        <li><a href="/Safety.html">Safety Measures</a></li>
+                        <li><a href="/vaccine.html">Vaccines</a></li>
+                        <li><a href="/faqs.html">FAQs</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><a href="/more.html">More</a></li>
+            <li><a href="/aboutpage.html">About</a></li>
+            <!-- <li><a href="/"></a></li> -->
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="swiper">
+            <div class="text_hide"></div>
+            <h1>COVID RESISTANCE <br> Covid-19 Protection & Awareness Site</h1>
+            <h2 id="slogan">#STAY HOME STAY SAFE</h2>
+            <div class="text_cursor"></div>
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first"><img src="/images/homepic3.avif" alt=""></div>
+                <div class="slide"><img src="/images/homepic5.jpg"alt=""></div>
+                <div class="slide"><img src="/images/homepic4.avif" alt=""></div>
+                <div class="slide"><img src="/images/photo-1592392513912-fd639ff32e98.avif" alt=""></div>
+                <div class="nav-auto">
+                    <div class="btn1"></div>
+                    <div class="btn2"></div>
+                    <div class="btn3"></div>
+                    <div class="btn4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+            <a href="/index.html">Home</a>
+            <a href="/impacts.html">Impacts</a>
+            <a href="/faqs.html">FAQs</a>
+            <a href="/aboutpage.html">About</a>
+        </div>
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form action="">
+                <input type="email" placeholder="Enter your Email Address" required><br>
+                <button>SUBSCRIBE NOW</button>
+            </form>
+            <div class="socialicons">
+                <a href="https://www.linkedin.com/in/aditya-tiwari-39405b201/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/_aditya_tiwari973?igshid=NmQ2ZmYxZjA=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/AdityaTiwari973" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Aditya973" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="col-3">
+            <h3>CONTACTS</h3>
+            <div class="location">
+
+                <i class="fa-sharp fa-solid fa-location-crosshairs"></i>Jabalpur Engineering College,<br>Jabalpur,
+                Madhya Pradesh, India
+            </div>
+            <div class="phone">
+                <i class="fas fa-mobile-alt"></i>+917440317440
+                <br>
+                <i class="far fa-at"></i><a href="mailto:tiwariaditya973@gmail.com">tiwariaditya973@gmail.com</a>
+
+            </div>
+        </div>
+        <script>
+            var count = 1;
+            setInterval(function(){
+                document.getElementById('radio'+count).checked = true;
+                count++;
+                if(count>4){
+                    count = 1;
+                }
+            },3000);
+        </script>
+        <script>
+            const slogans = ["#STAY HOME STAY SAFE","PRACTICE SOCIAL DISTANCING","WASH YOUR HANDS","TOGETHER WE CAN STOP COVID"]; 
+            var ct = 0;
+            setInterval(function(){
+                document.getElementById('slogan').innerHTML = slogans[ct];
+                ct++;
+                if(ct > 3){
+                    ct = 0;
+                }
+            },3000);
+        </script>
+        <script src="/index.js"></script>
+    </footer>
+    
+</body>
+
+</html>
