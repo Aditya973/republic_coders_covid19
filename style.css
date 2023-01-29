@@ -13,6 +13,8 @@
 
 #navbar {
     background-color: black;
+    display: flex;
+    letter-spacing: 0.5px;
     height: 62px;
 }
 
@@ -34,6 +36,7 @@ a {
 
 a:hover {
     color: red;
+    transition: 0.3s;
 }
 
 .introduction {
@@ -148,7 +151,7 @@ a:hover {
 
 .container1 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding-top: 20px;
     font-size: 3rem;
 
@@ -226,6 +229,7 @@ input[type="radio"] {
 
 .sub_menu {
     display: none;
+    z-index: 50;
     background-color: black;
 }
 
@@ -294,16 +298,18 @@ input[type="radio"] {
     height: 130vh;
 }
 
-.slides{
+.slides {
     width: 400%;
     height: 130vh;
     display: flex;
 }
-.slide{
+
+.slide {
     width: 100vw;
     transition: 1s;
 }
-.slide img{
+
+.slide img {
     position: relative;
     mask-repeat: repeat;
     width: 100%;
@@ -339,38 +345,50 @@ input[type="radio"] {
         typing 3.5s steps(40, end),
         blink-caret .75s step-end infinite;
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
 
-.nav-auto{
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.nav-auto {
     position: absolute;
     display: flex;
 }
-.nav-auto div{
+
+.nav-auto div {
     transition: 1s;
 
 }
 
-#radio1:checked~.first{
+#radio1:checked~.first {
     margin-left: 0;
 }
-#radio2:checked~.first{
+
+#radio2:checked~.first {
     margin-left: -25.5%;
-    
+
 }
-#radio3:checked~.first{
+
+#radio3:checked~.first {
     margin-left: -51%;
 }
-#radio4:checked~.first{
+
+#radio4:checked~.first {
     margin-left: -76%;
 }
-#slogan{
+
+#slogan {
     font-family: 'Roboto Mono', monospace;
     font-size: 3rem;
 }
-.text_hide{
+
+.text_hide {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -379,7 +397,7 @@ input[type="radio"] {
     background-color: white;
 }
 
-.text_cursor{
+.text_cursor {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -388,27 +406,32 @@ input[type="radio"] {
     background-color: transparent;
     border-left: 3px solid black;
 }
-.innersection h1{
+
+.innersection h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
-.innersection{
-    width: 55%;
-    height: 50%;
+
+.innersection {
+    font-family: cursive;
+    width: 60%;
+    height: 55%;
     float: right;
     margin: auto 10px;
     background-color: skyblue;
     padding: 30px;
-    box-shadow: 12px 12px 8px rgb(0,0,0,0.3);
+    box-shadow: 12px 12px 8px rgb(0, 0, 0, 0.3);
 }
-.textabout{
+
+.textabout {
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 35px;
     font-size: 16px;
     text-align: justify;
     margin-bottom: 40px;
 }
-.more button{
+
+.more button {
     font-size: 22px;
     text-align: center;
     letter-spacing: 2px;
@@ -420,98 +443,117 @@ input[type="radio"] {
     background-color: rgb(6, 144, 185);
     color: white;
 }
-.more button:hover{
+
+.more button:hover {
     background-color: rgb(2, 110, 143);
     transition: 1s;
 }
-.more button a:hover{
+
+.more button a:hover {
     color: white;
 }
 
-.container4{
+.container4 {
     display: flex;
     flex-direction: row-reverse;
-    
+
 }
-.container5 h1{
+
+.container5 h1 {
     font-size: 3rem;
     text-align: center;
     padding: 20px 10px;
     color: white;
 }
-.links li{
+
+.links li {
     margin: 33px 20px;
     background-color: #8eabf2;
     font-size: 25px;
     height: 50px;
     padding: 10px 20px;
 }
-.links li a{
+
+.links li a {
     color: black;
 }
-.links li a:hover{
-    color:white;
+
+.links li a:hover {
+    color: white;
+    transition: 0.3s;
 }
-.socialicons a:hover{
+
+.socialicons a:hover {
     color: rgb(0, 149, 218);
 }
-.contact-box{
+
+.contact-box {
     display: flex;
     flex-direction: row;
     width: 80%;
     margin: 50px auto;
     background-color: white;
 }
-.contact-left{
+
+.contact-left {
     flex-basis: 60%;
     padding: 40px 60px;
 }
-.contact-right{
+
+.contact-right {
     background-color: blue;
     flex-basis: 40%;
     color: white;
     padding: 40px;
 }
-.container6 h1{
-    margin : 30px 20px;
+
+.container6 h1 {
+    margin: 30px 20px;
     color: white;
     text-align: center;
 }
-.container6 p{
+
+.container6 p {
     text-align: center;
     color: white;
     margin: 10px 20px;
     font-size: 20px;
 }
-.input-row{
+
+.input-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.input-row .input-group{
+
+.input-row .input-group {
     flex-basis: 45%;
 }
-.input-group input{
+
+.input-group input {
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
     padding-bottom: 5px;
 }
-textarea{
+
+textarea {
     width: 100%;
     border: 1px solid #ccc;
     outline: none;
-    padding :10px;
+    padding: 10px;
     box-sizing: border-box;
 }
-.input-row label{
+
+.input-row label {
     margin-bottom: 6px;
     display: block;
     color: blue;
 }
-.contact-left form button{
-    border : none;
+
+.contact-left form button {
+    border: none;
     width: 100px;
     outline: none;
     cursor: pointer;
@@ -522,17 +564,32 @@ textarea{
     box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
     margin-top: 20px;
 }
-.contact-left h3{
+
+.contact-left h3 {
     font-weight: 600;
     margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
     color: blue;
 }
-tr td:first-child{
+.contact-right h3{
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+tr td:first-child {
     padding-right: 20px;
 }
-tr td{
+
+tr td {
     padding-top: 20px;
 }
-tr td a:hover{
+
+tr td a:hover {
     color: white;
+}
+
+.innersection h2{
+    letter-spacing: 2px;
+    line-height: 40px;
 }
